@@ -1,0 +1,69 @@
+.effect_01,
+.effect_02,
+.effect_03,
+.effect_04{
+    position: absolute;
+}
+.effect_01{
+    background: url(../images/effect_01.png);
+    width: 240px; height: 286px;
+    left: -50px;
+    top: 306px;
+}
+.effect_02{
+    background: url(../images/effect_02.png);
+    width: 628px; height: 564px;
+    right: 12px;
+    top: 352px;
+    z-index: 1;
+}
+.effect_03{
+    background: url(../images/effect_03.png);
+    width: 440px; height: 333px;
+    right: 104px;
+    top: 458px;
+    z-index: 1;
+}
+.effect_04{
+    background: url(../images/effect_04.png);
+    width:354px; height: 519px;
+    right: 0;
+    top: 468px;
+    z-index: 1;
+}
+
+/*  */
+
+section .introduce{
+    margin:168px 0 363px;
+    color:#fff;
+    font-family: 'NanumSquareRound';
+    font-size:30px;
+    letter-spacing: -0.75px;
+    text-align: center;
+    line-height: 1.33;
+}
+section .introduce p:last-child{
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: -1.13px;
+    margin-top: 36px;
+}
+
+/*  */
+
+section .background_img{
+    position: absolute;
+    width: 750px; height: 464px;
+    background: url(../images/background.png) no-repeat;
+    opacity: 0.8;
+    right: 0;
+    bottom: 0;
+    z-index: -9999;
+}
+
+
+
+
+/* section .background_img{
+} */

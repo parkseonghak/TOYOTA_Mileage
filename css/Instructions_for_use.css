@@ -1,0 +1,35 @@
+section .introduce{
+    margin-top:83px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    font-family: 'NanumSquareRound';
+    font-size:30px;
+    letter-spacing: -0.75px;
+    text-align: center;
+    line-height: 1.33;
+}
+
+/*  */
+
+section .goods{
+    margin-top:72px;
+    padding-bottom: 95px;
+    display: flex;
+    justify-content: center;
+}
+section .goods .background_img{
+    position: absolute;
+    width: 750px; height: 464px;
+    background: url(../images/background.png) no-repeat;
+    opacity: 0.8;
+    right: 0;
+    bottom: 0;
+    z-index: -9999;
+}
+
+
+
+
+/* section .background_img{
+} */

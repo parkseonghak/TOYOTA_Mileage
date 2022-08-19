@@ -1,0 +1,203 @@
+section .mileage_introduce h2{
+    color:#ccc9ff;
+    font-family: 'NanumSquareRound';
+    font-weight: 700;
+    font-style: normal;
+    font-size:32px;
+    letter-spacing: -0.8px;
+    line-height: 1.25;
+    text-align: center;
+    margin:91px 0 31px;
+}
+section .mileage_introduce p{
+    color:#fff;
+    font-family: 'NanumSquareRound';
+    font-weight: normal;
+    font-style: normal;
+    font-size:30px;
+    letter-spacing: -0.75px;
+    line-height: 1.33;
+    text-align: center;
+}
+section .mileage_introduce p span{
+    font-family: 'OpenSans';
+    font-weight: 700;
+}
+
+section .toyota_app{
+    text-align: center;
+    margin-top: 79px;
+}
+section .toyota_app p{
+    margin-top:35px;
+    color:#fff;
+    font-family: 'OpenSans';
+    font-weight: 700;
+    font-style: normal;
+    font-size:30px;
+    letter-spacing: -0.75px;
+    line-height: 1.33;
+}
+section .toyota_app p span{
+    font-family: 'NanumSquareRound';
+    font-weight: normal;
+}
+
+section .service_center{
+    text-align: center;
+    margin-top:95px;
+}
+section .service_center .toyota_container{
+    font-family: 'OpenSans';
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: -0.75px;
+    margin-top:39px;
+}
+section .service_center .toyota_container span{
+    font-family: 'NanumSquareRound';
+    font-weight: normal;
+}
+section .service_center .tel_container{
+    font-family: 'NanumSquareRound';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.67;
+    letter-spacing: -0.6px;
+    color:#fff;
+}
+section .service_center .tel_container span{
+    font-weight: normal;
+}
+
+/*  */
+
+section .background_container{
+    position: relative;
+}
+section .background_container > figure{
+    background: url(../images/background.png) no-repeat;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9999;
+}
+
+section .channel{
+    margin-top:102px;
+}
+section .channel .channel_container,
+section .document_guide .guide{
+    width:690px;
+    height: 95px;
+    background-color: #343439;
+    margin:0 auto;
+    border-radius: 10px;
+    position: relative;
+}
+section .channel .channel_container .application_channel{
+    position: absolute;
+    top:36px;
+    left:115px;
+    color:#fff;
+    font-family:'NanumSquareRound';
+    font-size: 25px;
+}
+section .channel .channel_container .how_to_apply{
+    position: absolute;
+    top:36px;
+    right:103px;
+    color:#fff;
+    font-family:'NanumSquareRound';
+    font-size:25px;
+}
+
+section .channel .app_channel,
+section .channel .service_channel{
+    width: 690px;
+    height: 90px;
+    position: relative;
+    border-bottom: 2px solid #353336;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+section .channel .app_channel p,
+section .channel .service_channel p{
+    font-family: 'OpenSans';
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    left: 97px;
+    line-height: 1.76;
+}
+section .channel .app_channel p span,
+section .channel .service_channel p span{
+    font-family: 'NanumSquareRound';
+    font-weight: normal;
+}
+section .channel .app_channel > span,
+section .channel .service_channel > span{
+    position: absolute;
+    color: #c2c3cd;
+    font-size: 22px;
+    right: 82px;
+    font-family: 'NanumSquareRound';
+}
+
+section .channel .service_channel p{
+    left:63px;
+}
+section .channel .service_channel > span{
+    right:73px;
+}
+
+/*  */
+section .document_guide{
+    border-bottom: 2px solid #353336;
+}
+section .document_guide .guide{
+    margin-top:75px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size:25px;
+    font-family:'NanumSquareRound';
+}
+section .document_guide ul{
+    margin:38px 0 0 93px;
+    color:#c2c3cd;
+    font-size: 22px;
+    line-height: 1.14;
+    letter-spacing: -0.55px;
+    font-family: 'NanumSquareRound';
+}
+section .document_guide ul li:not(:last-child){
+    margin-bottom: 9px;
+}
+section .document_guide ul li:last-child{
+    margin-bottom: 33px;
+}
+
+/*  */
+
+section .further_explanation{
+    color:#ccc9ff;
+    font-size: 20px;
+    font-family:'NanumSquareRound';
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    margin-bottom: 134px;
+}
+section .further_explanation ul{
+    margin: 36px 0 0 48px;
+}
+
+/*  */

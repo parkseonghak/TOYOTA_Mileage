@@ -1,0 +1,317 @@
+.container{
+    width: 750px;
+    height: 319px;
+    display: flex;
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 3750px;
+    align-items: center;
+    margin: 103px;
+}
+ul li{
+    width:540px; height: 319px;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.7s;
+}
+ul li:not(:last-child){
+    margin-right:73px;
+}
+ul li p{
+    font-family: 'OpenSans';
+    font-weight: 700;
+    position: absolute;
+}
+ul li .mileage_pass{
+    width: 202px; height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22.5px;
+    font-size: 21.5px;
+    left:41px; top:42px;
+    background-color: #fff;
+}
+ul li .tier{
+    font-size: 72.5px;
+    color:#fff;
+    right:49px; bottom:49px;
+}
+ul li .toyota_mark{
+    position: absolute;
+    right:0; bottom:0;
+}
+ul .background_platinum{
+    background-color:#27275c;
+}
+ul .background_gold{
+    background-color:#c78a1f;
+}
+ul .background_silver{
+    background-color:#4c4c4c;
+}
+ul .background_bronze{
+    background-color:#a74929;
+}
+ul .background_family{
+    background-color: #db1313;
+}
+ul .reduction{
+    height:285px;
+}
+ul li .platinum{
+    color:#27275c;
+}
+ul li .gold{
+    color: #c78a1f;
+}
+ul li .silver{
+    color: #4c4c4c;
+}
+ul li .bronze{
+    color: #a74929;
+}
+ul li .family{
+    color: #db1313;
+}
+
+/*  */
+
+.dl_container{
+    position: relative;
+    width: 540px;
+    height: 270px;
+    margin: 0 auto;
+    margin-top:71px;
+}
+.dl_container dl{
+    position: absolute;
+}
+
+.platinum_benefit{
+    width: 540px;
+    margin:0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'NanumSquareRound';
+    display: block;
+}
+.platinum_benefit dt{
+    font-weight: 700;
+    font-size:34px;
+    width:100%;
+    padding:30px 0;
+    border-top: 2px solid #353336;
+    border-bottom: 2px solid #353336;
+}
+.platinum_benefit dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color:#c2c3cd;
+    border-bottom: 2px solid #353336;
+}
+.platinum_benefit dd p:nth-of-type(1){
+    padding-right: 73px;
+    line-height: 1.76;
+}
+.platinum_benefit dd p:nth-of-type(2){
+    padding: 30px 0 37px 73px;
+    line-height: 1.6;
+    border-left:2px solid #353336;
+}
+.platinum_benefit dd p span{
+    font-weight: 700;
+}
+
+.gold_benefit{
+    width: 540px;
+    margin:0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'NanumSquareRound';
+    display: block;
+}
+.gold_benefit dt{
+    font-weight: 700;
+    font-size:34px;
+    width:100%;
+    padding:30px 0;
+    border-top: 2px solid #353336;
+    border-bottom: 2px solid #353336;
+}
+.gold_benefit dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color:#c2c3cd;
+    border-bottom: 2px solid #353336;
+}
+.gold_benefit dd p:nth-of-type(1){
+    padding-right: 73px;
+    line-height: 1.76;
+}
+.gold_benefit dd p:nth-of-type(2){
+    padding: 30px 0 37px 73px;
+    line-height: 1.6;
+    border-left:2px solid #353336;
+}
+.gold_benefit dd p span{
+    font-weight: 700;
+}
+
+.silver_benefit{
+    width: 540px;
+    margin:0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'NanumSquareRound';
+    display: block;
+}
+.silver_benefit dt{
+    font-weight: 700;
+    font-size:34px;
+    width:100%;
+    padding:30px 0;
+    border-top: 2px solid #353336;
+    border-bottom: 2px solid #353336;
+}
+.silver_benefit dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color:#c2c3cd;
+    border-bottom: 2px solid #353336;
+}
+.silver_benefit dd p:nth-of-type(1){
+    padding-right: 73px;
+    line-height: 1.76;
+}
+.silver_benefit dd p:nth-of-type(2){
+    padding: 30px 0 37px 73px;
+    line-height: 1.6;
+    border-left:2px solid #353336;
+}
+.silver_benefit dd p span{
+    font-weight: 700;
+}
+
+.bronze_benefit{
+    width: 540px;
+    margin:0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'NanumSquareRound';
+    display: block;
+}
+.bronze_benefit dt{
+    font-weight: 700;
+    font-size:34px;
+    width:100%;
+    padding:30px 0;
+    border-top: 2px solid #353336;
+    border-bottom: 2px solid #353336;
+}
+.bronze_benefit dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color:#c2c3cd;
+    border-bottom: 2px solid #353336;
+}
+.bronze_benefit dd p:nth-of-type(1){
+    padding-right: 73px;
+    line-height: 1.76;
+}
+.bronze_benefit dd p:nth-of-type(2){
+    padding: 30px 0 37px 73px;
+    line-height: 1.6;
+    border-left:2px solid #353336;
+}
+.bronze_benefit dd p span{
+    font-weight: 700;
+}
+
+.family_benefit{
+    width: 540px;
+    margin:0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'NanumSquareRound';
+    display: block;
+}
+.family_benefit dt{
+    font-weight: 700;
+    font-size:34px;
+    width:100%;
+    padding:30px 0;
+    border-top: 2px solid #353336;
+    border-bottom: 2px solid #353336;
+}
+.family_benefit dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color:#c2c3cd;
+    border-bottom: 2px solid #353336;
+}
+.family_benefit dd p:nth-of-type(1){
+    padding:50px 73px 49px 0;
+    line-height: 1.76;
+    border-right:2px solid #353336;
+}
+.family_benefit dd p:nth-of-type(2){
+    padding-left:73px;
+    line-height: 1.6;
+}
+.family_benefit dd p span{
+    font-weight: 700;
+}
+
+.dl_container .benefit{
+    display: none;
+}
+
+
+/*  */
+
+.selection_criteria{
+    width: 565px;
+    margin: 0 auto;
+    margin-top: 74px;
+    color:#ccc9ff;
+}
+.selection_criteria h3{
+    font-family:'NanumSquareRound';
+    font-size:25px;
+}
+.selection_criteria p{
+    margin: 30px 0 148px;
+    font-family: 'SDGothic';
+    font-size:20px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+}
+
+/*  */
+
+
+section .background_img{
+    position: absolute;
+    width: 750px; height: 464px;
+    background: url(../images/background.png) no-repeat;
+    opacity: 0.8;
+    right: 0;
+    bottom: 0;
+    z-index: -9999;
+}
+
+
+

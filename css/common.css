@@ -1,0 +1,105 @@
+#app{
+    width:750px;
+    background-color: #101010;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+header{
+    height: 143px;
+    border-bottom: 3px solid #474747;
+}
+header .back_btn{
+    position: absolute;
+    top: 68px;
+    left: 30px;
+}
+header h1 {
+    font-family: 'NanumSquareRound';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    color: #fff;
+    line-height: 30px;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 66px;
+    left: 229px;
+}
+header .hom_btn {
+    position: absolute;
+    right: 100px;
+    top: 54px;
+}
+header .menu_btn{
+    position: absolute;
+    top: 66px;
+    right: 30px;
+}
+
+/*  */
+
+section .mileage_pass_container{
+    position: relative;
+    width: 540px;
+    height: 319px;
+    margin: 0 auto;
+    margin-top:125px;
+    border-radius: 10px;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .mileage_pass_container .toyota_mark{
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+section .mileage_pass_container .mileage_pass{
+    z-index: 1;
+    width: 202px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .mileage_pass_container .mileage_pass p{
+    font-family: 'OpenSans';
+    font-weight: 700;
+    font-size: 21.5px;
+    color:#000;
+}
+
+/*  */
+
+footer{
+    width: 750px;
+    height: 98px;
+    background-color: #ED4C3A;
+}
+footer a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NanumSquareRound';
+    font-size: 28px;
+    color:#fff;
+}
+
+/*  */
+
+.popup_display{
+    height: 2524px;
+}
+.footer_popup_display{
+    position: absolute;
+    bottom: 0;
+}
