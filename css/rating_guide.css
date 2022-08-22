@@ -2,16 +2,15 @@
     width: 750px;
     height: 319px;
     display: flex;
-    position: relative;
 }
 ul{
     list-style: none;
     display: flex;
     width: 3750px;
     align-items: center;
-    margin: 0 103px 103px;
-    pointer-events: none;
-    position: absolute;
+    margin: 103px;
+    position: relative;
+    transition: 0.5s;
 }
 ul li{
     width:540px; height: 319px;

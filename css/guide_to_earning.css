@@ -43,10 +43,6 @@ section ul li a p{
     font-size:32px;
     letter-spacing: -0.8px;
 }
-section ul li a p span{
-    font-family: 'OpenSans';
-    font-weight: 700;
-}
 section ul li a img{
     margin-right: 30px;
 }
@@ -60,10 +56,6 @@ section .additional_explanation{
     line-height: 1.25;
     letter-spacing: -0.5px;
     color:#ccc9ff;
-}
-section .additional_explanation span{
-    font-family: 'OpenSans';
-    font-weight: 700;
 }
 
 /*  */
@@ -128,8 +120,10 @@ section .additional_explanation span{
     margin:32px 0 0 58px;
     padding-bottom: 39px;
     border-bottom: 1px solid #474747;
+    line-height: 1.6;
+    letter-spacing: -0.63px;
 }
-.popup_new_member .upon_signup span{
+.popup_new_member .upon_signup .red_word{
     color:#d7022c;
     font-weight: 700;
 }
@@ -165,6 +159,7 @@ section .additional_explanation span{
     top:0; left:0;
     background-color: rgba(20, 20, 20, 0.9);
     z-index: 9999;
+    list-style: none;
 }
 .popup_recommender .recommender_container{
     width:690px; height: 730px;
@@ -223,7 +218,7 @@ section .additional_explanation span{
     line-height: 1.6;
     letter-spacing: -0.63px;
 }
-.popup_recommender .upon_signup span{
+.popup_recommender .upon_signup .red_word{
     color:#d7022c;
     font-weight: 700;
 }
@@ -238,15 +233,9 @@ section .additional_explanation span{
     font-family: 'NanumSquareRound';
     font-size:20px;
     color:#ccc9ff;
-    display: flex;
-    align-items: center;
 }
-.popup_recommender .condition .circle{
-    content: '';
-    position: absolute;
-    width:4px; height:4px;
-    background-color: #ccc9ff;
-    border-radius: 50%;
+.popup_recommender .condition:nth-of-type(4){
+    line-height: 1.75;
 }
 .popup_recommender .condition .writing{
     margin-left:16px
@@ -373,8 +362,6 @@ section .additional_explanation span{
     margin-bottom: 46px;
 }
 .popup_purchase .greeting_container .greeting{
-    font-family: 'OpenSans';
-    font-weight: 700;
     font-size: 24px;
 }
 .popup_purchase .greeting_container h2{
