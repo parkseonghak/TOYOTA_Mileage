@@ -15,9 +15,9 @@
     
     <div id="app">
         <header>
-            <a href="###" class="back_btn"><img src="./images/left-arrow.png" alt="뒤로가기버튼"></a>
+            <a href="javascript:history.back();" class="back_btn"><img src="./images/left-arrow.png" alt="뒤로가기버튼"></a>
             <h1>마일리지 등급안내</h1>
-            <a href="###" class="hom_btn"><img src="./images/logo.png" alt="토요타로고"></a>
+            <a href="https://www.toyotakoreaapp.co.kr/main.do" class="hom_btn"><img src="./images/logo.png" alt="토요타로고"></a>
             <button class="menu_btn"><img src="./images/menu_bar.png" alt="메뉴 버튼"></button>
         </header>
 
@@ -27,7 +27,7 @@
                 <p>등급 별 혜택안내</p>
             </div>
             <div class="container">
-                <ul class="silder">
+                <ul class="slider">
                     <li class="background_platinum">
                         <p class="mileage_pass platinum">MILEAGE PASS</p>
                         <figure class="toyota_mark"><img src="./images/toyota_mark_platinum.png" alt="토요타 마크"></figure>
@@ -88,8 +88,56 @@
         </section>
 
         <footer>
-            <a href="###">온라인 쇼핑몰 가기</a>
+            <a href="###">확인</a>
         </footer>
     </div>
+
+    <!-- script -->
+
+    <script>
+
+        let slider = document.querySelector(".container")
+        let innerSlider = document.querySelector(".slider")
+        let pressed = false
+        let startx
+        let x
+
+        slider.addEventListener("touchstart", e => {
+          pressed = true
+          startx = e.offsetX - innerSlider.offsetLeft
+          slider.style.cursor = "grabbing"
+          console.log('aaa')
+        })
+
+        slider.addEventListener("touchend", () => {
+          slider.style.cursor = "grab"
+        })
+
+        window.addEventListener("touchend", () => {
+          pressed = false
+          console.log('ccc')
+        })
+
+        slider.addEventListener("touchmove", e => {
+          if (!pressed) return
+          e.preventDefault()
+          x = e.offsetX
+        
+          innerSlider.style.left = `${x - startx}px`
+          checkboundary()
+          console.log('bbb')
+        })
+
+        function checkboundary() {
+          let outer = slider.getBoundingClientRect()
+          let inner = innerSlider.getBoundingClientRect()
+        
+          if (parseInt(innerSlider.style.left) > 0) {
+            innerSlider.style.left = "0px"
+          } else if (inner.right < outer.right) {
+            innerSlider.style.left = `-${inner.width - outer.width}px`
+          }
+        }
+    </script>
 </body>
 </html>

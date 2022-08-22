@@ -576,6 +576,9 @@ section .additional_explanation span{
     font-weight: 700;
 }
 
+.popup_on{
+    display: flex;
+}
 /* popup */
 
 section .background_img{

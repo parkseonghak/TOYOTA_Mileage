@@ -15,9 +15,9 @@
     
     <div id="app">
         <header>
-            <a href="###" class="back_btn"><img src="./images/left-arrow.png" alt="뒤로가기버튼"></a>
+            <a href="javascript:history.back();" class="back_btn"><img src="./images/left-arrow.png" alt="뒤로가기버튼"></a>
             <h1>마일리지 적립안내</h1>
-            <a href="###" class="hom_btn"><img src="./images/logo.png" alt="토요타로고"></a>
+            <a href="https://www.toyotakoreaapp.co.kr/main.do1" class="hom_btn"><img src="./images/logo.png" alt="토요타로고"></a>
             <button class="menu_btn"><img src="./images/menu_bar.png" alt="메뉴 버튼"></button>
         </header>
 
@@ -34,11 +34,11 @@
             </div>
 
             <ul>
-                <li><a href="###" class="new_member"><p>신규 회원가입</p><img src="./images/right_arrow.png" alt="팝업창 열기"></a></li>
-                <li><a href="###" class="recommender"><p>추천인 소개</p><img src="./images/right_arrow.png" alt="팝업창 열기"></a></li>
-                <li><a href="###" class="repurchase"><p><span>TOYOTA</span> 재구매</p><img src="./images/right_arrow.png" alt="팝업창 열기"></a></li>
-                <li><a href="###" class="purchase"><p>온라인 쇼핑몰 상품 구매</p><img src="./images/right_arrow.png" alt="팝업창 열기"></a></li>
-                <li><a href="###" class="wearing red_point"><p>서비스 입고</p><img src="./images/red_right_arrow.png" alt="팝업창 열기"></a></li>
+                <li><a href="###" class="new_member popup_btn"><p>신규 회원가입</p><img src="./images/right_arrow.png" alt="팝업창 열기"></a></li>
+                <li><a href="###" class="recommender popup_btn"><p>추천인 소개</p><img src="./images/right_arrow.png" alt="팝업창 열기"></a></li>
+                <li><a href="###" class="repurchase popup_btn"><p><span>TOYOTA</span> 재구매</p><img src="./images/right_arrow.png" alt="팝업창 열기"></a></li>
+                <li><a href="###" class="purchase popup_btn"><p>온라인 쇼핑몰 상품 구매</p><img src="./images/right_arrow.png" alt="팝업창 열기"></a></li>
+                <li><a href="###" class="wearing red_point popup_btn"><p>서비스 입고</p><img src="./images/red_right_arrow.png" alt="팝업창 열기"></a></li>
             </ul>
 
             <p class="additional_explanation"><span>TOYOTA</span> 마일리지 적립은 2022.06.01 기준으로 시작되며,<br/>본 시점 이전의 서비스 입고 / 소개 / 재구매 등에 대해 소급 적용이 되지 않습니다.<br/>• 위 적립 기준은 별도의 예고없이 변경될 수 있습니다.</p>
@@ -46,7 +46,7 @@
             <figure class="background_img"></figure>
         </section>
 
-        <div class="popup_new_member">
+        <div class="popup_new_member popup_display">
             <div class="new_member_container">
                 <div class="close_btn">
                     <span><img src="./images/close_btn.png" alt="닫기 버튼"></span>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="popup_recommender">
+        <div class="popup_recommender popup_display">
             <div class="recommender_container">
                 <div class="close_btn">
                     <span><img src="./images/close_btn.png" alt="닫기 버튼"></span>
@@ -84,7 +84,7 @@
             </div>
         </div>
 
-        <div class="popup_repurchase">
+        <div class="popup_repurchase popup_display">
             <div class="repurchase_container">
                 <div class="close_btn">
                     <span><img src="./images/close_btn.png" alt="닫기 버튼"></span>
@@ -92,8 +92,8 @@
                 </div>
                 <figure class="repurchase_img_container"><img src="./images/repurchase.png" alt="추천인 이미지"></figure>
                 <div class="greeting_container">
-                    <p class="greeting">알릴수록 더욱 늘어나는 마일리지</p>
-                    <h2>추천인 소개</h2>
+                    <p class="greeting">다시 구매해도 적립!</p>
+                    <h2>재구매 고객</h2>
                 </div>
                 <div class="write_container">
                     <p class="condition"><span class="writing">• <span class="toyota_word">TOYOTA</span> 차량을 과거 보유하였거나 현재 보유하고 있는 App 회원이<br/> &nbsp;  &nbsp; 공식 <span class="toyota_wrod">TOYOTA</span> 전시장에서 신차 구매 시 <span class="red_word">50,000마일리지</span>를<br/> &nbsp;  &nbsp; 적립해 드립니다.</span></p>
@@ -108,7 +108,7 @@
             </div>
         </div>
 
-        <div class="popup_purchase">
+        <div class="popup_purchase popup_display">
             <div class="purchase_container">
                 <div class="close_btn">
                     <span><img src="./images/close_btn.png" alt="닫기 버튼"></span>
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <div class="popup_wearing">
+        <div class="popup_wearing popup_display">
             <div class="wearing_container">
                 <div class="close_btn">
                     <span><img src="./images/close_btn.png" alt="닫기 버튼"></span>
@@ -196,5 +196,26 @@
             <a href="###">확인</a>
         </footer>
     </div>
+
+    <!-- script -->
+
+    <script>
+        
+        const popUpBtn = document.querySelectorAll('.popup_btn');
+        const popUpDisplay = document.querySelectorAll('.popup_display');
+        const closeBtn = document.querySelectorAll('.close_btn');
+
+        for(let i = 0; i < popUpBtn.length; i++){
+            popUpBtn[i].addEventListener('click', () => {
+                popUpDisplay[i].classList.add('popup_on');
+            })
+
+            closeBtn[i].addEventListener('click', () => {
+                popUpDisplay[i].classList.remove('popup_on');
+            })
+        }
+
+        
+    </script>
 </body>
 </html>
