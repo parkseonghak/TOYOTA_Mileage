@@ -98,7 +98,7 @@
         let curPos = 0;
         let postion = 0;
         let start_x, end_x;
-        const IMAGE_WIDTH = 613;
+        const slideWidth = 613;
         const slider = document.querySelector(".slider") 
         const sliderItem = document.querySelectorAll('.slider_item')
         const benefitItem = document.querySelectorAll('.benefit_item')
@@ -108,7 +108,7 @@
             
         function prev(){
             if(curPos > 0){
-              postion += IMAGE_WIDTH;
+              postion += slideWidth;
               slider.style.transform = `translateX(${postion}px)`;
               curPos = curPos - 1;
               for(let i = 0; i < sliderItem.length; i++){
@@ -116,7 +116,7 @@
                     sliderItem[i].classList.remove('reduction')
                     benefitItem[i].classList.remove('benefit')
                 }else{
-                    
+
                     sliderItem[i].classList.add('reduction')
                     benefitItem[i].classList.add('benefit')
                 }
@@ -125,7 +125,7 @@
         }
         function next(){
           if(curPos < sliderItem.length-1){
-            postion -= IMAGE_WIDTH;
+            postion -= slideWidth;
             slider.style.transform = `translateX(${postion}px)`;
             curPos = curPos + 1;
             for(let i = 0; i < sliderItem.length; i++){
