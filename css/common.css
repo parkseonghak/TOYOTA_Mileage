@@ -231,6 +231,10 @@ footer a{
 .btn_wrap button {float: left; margin: 0 0 0 30px;}
 .btn_wrap button:first-child {margin: 0;}
 
+.grclub-card {width: 343px; height: 214px; margin: 20px 0 0; background-image: url("../images/card_gr.png"); background-repeat: no-repeat; background-size: 100%; background-position: center;
+}
+.grclub-card p{text-align: center; padding: 155px 0 0; font-size: 22px; color: #202020;}
+
 .depth2 li a span{
     display: inline-flex;
     width: 31px;
