@@ -1,3 +1,6 @@
+section .introduce{
+    margin-top: 236px;
+}
 section .mileage_introduce h2{
     color:#ccc9ff;
     font-family: 'NanumSquareRound';
@@ -7,7 +10,7 @@ section .mileage_introduce h2{
     letter-spacing: -0.8px;
     line-height: 1.25;
     text-align: center;
-    margin:91px 0 31px;
+    margin-bottom:31px;
 }
 section .mileage_introduce p{
     color:#fff;

@@ -127,6 +127,7 @@
           if(curPos < sliderItem.length-1){
             postion -= slideWidth;
             slider.style.transform = `translateX(${postion}px)`;
+            
             curPos = curPos + 1;
             for(let i = 0; i < sliderItem.length; i++){
               if(sliderItem[curPos] === sliderItem[i]){
