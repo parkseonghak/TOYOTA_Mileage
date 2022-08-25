@@ -1,69 +1,38 @@
-.effect_01,
-.effect_02,
-.effect_03,
-.effect_04{
+.content_container{
+    width:750px; height: 1254px;
+    margin-top: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/bg_car02.png)no-repeat;
+    background-position: -150px bottom;
+    position: relative;
+    z-index: -9999;
+}
+.bg_blend{
     position: absolute;
-}
-.effect_01{
-    background: url(../images/effect_01.png);
-    width: 240px; height: 286px;
-    left: -50px;
-    top: 306px;
-}
-.effect_02{
-    background: url(../images/effect_02.png);
-    width: 628px; height: 564px;
-    right: 12px;
-    top: 352px;
-    z-index: 1;
-}
-.effect_03{
-    background: url(../images/effect_03.png);
-    width: 440px; height: 333px;
-    right: 104px;
-    top: 458px;
-    z-index: 1;
-}
-.effect_04{
-    background: url(../images/effect_04.png);
-    width:354px; height: 519px;
-    right: 0;
-    top: 468px;
-    z-index: 1;
+    width:750px; height: 1254px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -9998;
 }
 
-/*  */
-
-section .introduce{
-    margin:168px 0 363px;
+.introduce{
     color:#fff;
     font-family: 'NanumSquareRound';
     font-size:30px;
+    display: flex;
     letter-spacing: -0.75px;
-    text-align: center;
     line-height: 1.33;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-section .introduce p:last-child{
-    font-size: 45px;
+.introduce p:last-child{
+    font-family: 'NanumSquare';
+    font-size: 35px;
     font-weight: 700;
-    letter-spacing: -1.13px;
-    margin-top: 36px;
+    line-height: 1.14;
+    letter-spacing: -0.88px;
+    margin-top: 33px;
 }
 
-/*  */
-
-section .background_img{
-    position: absolute;
-    width: 750px; height: 464px;
-    background: url(../images/background.png) no-repeat;
-    opacity: 0.8;
-    right: 0;
-    bottom: 0;
-    z-index: -9999;
-}
-
-
-
-
-/* section .background_img{
-} */

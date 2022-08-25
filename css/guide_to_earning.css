@@ -15,7 +15,7 @@ section .introduce span{
 /*  */
 
 section ul{
-    margin:100px 30px 0;
+    margin:100px 30px;
     color:#fff;
     list-style: none;
 }
@@ -34,7 +34,7 @@ section ul li a{
     line-height: 1.25;
 }
 section ul li .red_point{
-    color:#ed4c3a;
+    color:#d7022c;
 }
 section ul li a p{
     margin-left: 30px;
@@ -47,16 +47,6 @@ section ul li a img{
     margin-right: 30px;
 }
 
-/*  */
-
-section .additional_explanation{
-    margin:30px 0 133px 30px;
-    font-family: 'NanumSquareRound';
-    font-size:20px;
-    line-height: 1.25;
-    letter-spacing: -0.5px;
-    color:#ccc9ff;
-}
 
 /*  */
 
@@ -213,7 +203,7 @@ section .additional_explanation{
 .popup_recommender .upon_signup{
     width: 600px;
     margin:32px 0 0 58px;
-    padding-bottom: 39px;
+    padding-bottom: 37.5px;
     border-bottom: 1px solid #474747;
     line-height: 1.6;
     letter-spacing: -0.63px;
@@ -225,14 +215,12 @@ section .additional_explanation{
 .popup_recommender .write_container{
     margin-top:32px;
 }
-.popup_recommender .condition:not(:first-child){
-    margin-top:18px;
-}
 .popup_recommender .condition{
     margin-left:58px;
     font-family: 'NanumSquareRound';
     font-size:20px;
     color:#ccc9ff;
+    line-height: 1.75;
 }
 .popup_recommender .condition:nth-of-type(4){
     line-height: 1.75;
@@ -294,6 +282,19 @@ section .additional_explanation{
     font-weight: 700;
     margin-top:16px;
 }
+.popup_repurchase .upon_signup{
+    margin-left:81px;
+    font-family: 'NanumSquare';
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: -0.63px;
+    color:#fff;
+    margin-bottom: 35px;
+}
+.popup_repurchase .upon_signup .red_word{
+    color:#d7022c;
+    font-weight: 700;
+}
 .popup_repurchase .write_container{
     padding-top:36px;
     border-top:2px solid #474747;
@@ -327,7 +328,7 @@ section .additional_explanation{
     z-index: 9999;
 }
 .popup_purchase .purchase_container{
-    width:690px; height: 490px;
+    width:690px; height: 586px;
     box-sizing: border-box;
     background-color: rgba(52, 52, 57, 0.9);
     border-radius: 10px;
@@ -357,7 +358,7 @@ section .additional_explanation{
 }
 .popup_purchase .greeting_container{
     color:#fff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-weight: 700;
     margin-bottom: 46px;
 }
@@ -368,6 +369,20 @@ section .additional_explanation{
     font-size:38px;
     font-weight: 700;
     margin-top:16px;
+}
+.popup_purchase .upon_signup{
+    margin-left: 67px;
+    font-family: 'NanumSquare';
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.63px;
+    color:#fff;
+    margin-bottom:30px;
+
+}
+.popup_purchase .upon_signup .red_word{
+    color:#d7022c;
+    font-weight: 700;
 }
 .popup_purchase .write_container{
     padding-top:36px;
@@ -559,7 +574,7 @@ section .additional_explanation{
     margin-right: 8px;
 }
 .popup_wearing .red_word{
-    color:#ed4c3a;
+    color:#d7022c;
     font-weight: 700;
 }
 

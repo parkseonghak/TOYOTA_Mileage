@@ -1,9 +1,29 @@
+.benefits_by_tier{
+    margin-top:254px;
+    text-align: center;
+}
+.benefits_by_tier h2{
+    font-family: 'OpenSans';
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.57;
+    color:#fff;
+}
+.benefits_by_tier p{
+    font-family: 'NanumSquareRound';
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: -0.75px;
+    color:#fff;
+}
+
 .container{
     width: 750px;
     height: 319px;
     display: flex;
+    margin-top: 58px;
 }
-ul{
+.slider{
     list-style: none;
     display: flex;
     width: 3750px;
@@ -12,21 +32,21 @@ ul{
     position: relative;
     transition: 0.5s;
 }
-ul li{
+.slider li{
     width:540px; height: 319px;
     border-radius: 10px;
     position: relative;
     transition: 0.7s;
 }
-ul li:not(:last-child){
+.slider li:not(:last-child){
     margin-right:73px;
 }
-ul li p{
+.slider li p{
     font-family: 'OpenSans';
     font-weight: 700;
     position: absolute;
 }
-ul li .mileage_pass{
+.slider li .mileage_pass{
     width: 202px; height: 45px;
     display: flex;
     justify-content: center;
@@ -36,48 +56,69 @@ ul li .mileage_pass{
     left:41px; top:42px;
     background-color: #fff;
 }
-ul li .tier{
+.slider li .tier{
     font-size: 72.5px;
     color:#fff;
     right:49px; bottom:49px;
 }
-ul li .toyota_mark{
+.slider li .toyota_mark{
     position: absolute;
     right:0; bottom:0;
 }
-ul .background_platinum{
+.slider .background_platinum{
     background-color:#27275c;
 }
-ul .background_gold{
+.slider .background_gold{
     background-color:#c78a1f;
 }
-ul .background_silver{
+.slider .background_silver{
     background-color:#4c4c4c;
 }
-ul .background_bronze{
+.slider .background_bronze{
     background-color:#a74929;
 }
-ul .background_family{
+.slider .background_family{
     background-color: #db1313;
 }
-ul .reduction{
+.slider .reduction{
     height:285px;
 }
-ul li .platinum{
+.slider li .platinum{
     color:#27275c;
 }
-ul li .gold{
+.slider li .gold{
     color: #c78a1f;
 }
-ul li .silver{
+.slider li .silver{
     color: #4c4c4c;
 }
-ul li .bronze{
+.slider li .bronze{
     color: #a74929;
 }
-ul li .family{
+.slider li .family{
     color: #db1313;
 }
+
+/*  */
+
+.criteria_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.criteria_box p{
+    width: 175px; height: 39px;
+    background-color: #d7022c;
+    color:#fff;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NanumSquare';
+    font-size: 22px;
+}
+
 
 /*  */
 
@@ -86,7 +127,7 @@ ul li .family{
     width: 540px;
     height: 270px;
     margin: 0 auto;
-    margin-top:71px;
+    margin-top:35px;
 }
 .dl_container dl{
     position: absolute;
@@ -279,6 +320,12 @@ ul li .family{
 
 .dl_container .benefit{
     display: none;
+}
+
+dl dd span,
+dd .color_point{
+    color:#ccc9ff;
+    font-weight: 700;
 }
 
 

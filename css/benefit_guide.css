@@ -1,5 +1,20 @@
+section .bg_car{
+    width: 750px; height: 576px;
+    position: absolute;
+    top: 143px;
+    background: url(../images/bg_car.png)no-repeat;
+    z-index: -9999;
+}
+section .bg_gradient{
+    width: 750px; height: 576px;
+    position: absolute;
+    top: 143px;
+    z-index: -9998;
+    background:linear-gradient(3deg, rgba(16, 16, 16, 1) 20%, rgba(16, 16, 16, 0.7) 80%);
+}
+
 section .introduce{
-    margin-top:82px;
+    margin-top:668px;
     color:#fff;
     font-family: 'NanumSquareRound';
     font-size:30px;
@@ -32,7 +47,7 @@ section .rating_container{
 section .rating_container .rating_guide{
     color:#fff;
     text-align: center;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-weight: 700;
     font-size:45px;
 }
@@ -46,20 +61,20 @@ section .rating_container .table_box{
     align-items: center;
 }
 section .rating_container .table_box p{
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-weight: 700;
     font-size: 25px;
     color:#fff;
     opacity: 1;
 }
 section .rating_container .table_box p:nth-of-type(1){
-    margin-left:93px;
+    margin-left:37px;
 }
 section .rating_container .table_box p:nth-of-type(2){
-    margin-left: 192px;
+    margin-left: 85px;
 }
 section .rating_container .table_box p:nth-of-type(3){
-    margin-left:188px;
+    margin-left:141px;
 }
 
 /*  */
@@ -134,9 +149,13 @@ section .rating_container .rating_box .family .rating{
 section .rating_container .rating_box .family .mileage_basic{
     left:291px;
     height: 44px;
+    display: flex;
+    align-items: center;
 }
 section .rating_container .rating_box .family .standard_reserve{
     right:39px;
+    display: flex;
+    align-items: center;
 }
 
 section .rating_container .rating_box li .rating{
@@ -171,6 +190,9 @@ section .grant_criteria{
     font-size:20px;
     line-height: 1.25;
     letter-spacing: -0.5px;
+}
+section .grant_criteria p:nth-of-type(2){
+    margin: 34px 0;
 }
 
 section .background_img{

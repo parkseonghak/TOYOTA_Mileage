@@ -12,14 +12,143 @@
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 </head>
 <body>
-    
-    <div id="app">
-        <header>
+    <div id="container" class="background-bk">
+        <header id="header" class="sub nav_conatiner">
             <a href="javascript:history.back();" class="back_btn"><img src="./images/left-arrow.png" alt="뒤로가기버튼"></a>
             <h1>마일리지 등급안내</h1>
             <a href="https://www.toyotakoreaapp.co.kr/main.do" class="hom_btn"><img src="./images/logo.png" alt="토요타로고"></a>
-            <button class="menu_btn"><img src="./images/menu_bar.png" alt="메뉴 버튼"></button>
         </header>
+        <button type="button" id="trgAside" class="trg_aside">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+
+        <div id="gnb">
+            <div class="member">
+                <div class="logout">
+                            <div class="btn_wrap">
+                                <a href="/auth/sign.do" class="login-btn c1">로그인</a>
+                                <a href="/auth/join/agree.do" class="member-btn c1">회원가입</a>
+                            </div>
+                            <a href="/formal/setting.do" class="btn_setting"></a>
+                        </div>
+                        </div>
+            <ul>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">TOYOTA</a>
+                    <ul class="depth2">
+                        <li><a href="/toyota/place/list.do">전시장 안내</a></li>
+                        <!-- <li><a href="/toyota/campaign/list.do">캠페인</a></li> -->
+                        <li><a href="/toyota/news/list.do">공지/뉴스</a></li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a href="javascript:void(0);">Contents</a>
+                    <ul class="depth2">
+                        <li><a href="/toyota/travelog/list.do">트래블로그</a></li>
+                        <li><a href="/toyota/life/list.do">라이프 스타일</a></li>
+                    </ul>
+                </li> -->
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Models</a>
+                    <ul class="depth2">
+                        <li><a href="/models/model/list.do">차량 정보</a></li>
+                        <li><a href="/models/manual/list.do">사용자 매뉴얼</a></li>
+                        <li><a href="/models/demo/info.do">시승 신청</a></li>
+                        <!-- <li><a href="/models/promo/info.do">이 달의 금융 프로모션</a></li> -->
+                        
+                    </ul>
+                </li>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Service</a>
+                    <ul class="depth2">
+                        <li><a href="/service/center/list.do">서비스센터 예약</a></li>
+                        <li><a href="/service/bodyAndPaint/view.do">판금·도장 서비스</a></li>
+                    </ul>
+                </li>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Support</a>
+                    <ul class="depth2">
+                        <li><a href="/support/sos/info.do">SOS 긴급 출동</a></li>
+                        <li><a href="/support/contact/info.do">1:1 문의</a></li>
+                        <li><a href="/support/improve/info.do">개선요청</a></li>
+                    </ul>
+                </li>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Event / Coupon</a>
+                    <ul class="depth2">
+                        <li><a href="/evncou/event/list.do">이벤트</a></li>
+                        <li><a href="/evncou/coupon/list.do">쿠폰 정보</a></li>
+                        <!-- <li><a href="/evncou/superracing/ticketApply.do">슈퍼레이스 티켓 교환코드 등록</a></li> -->
+                        <!-- <li><a href="/evncou/superracing/ticketStorege.do">슈퍼레이스 티켓 보관함</a></li> -->
+                    </ul>
+                </li>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">My Car</a>
+                    <ul class="depth2">
+                        <li><a href="/mycar/info/info.do">내 차 정보</a></li>
+                        <li><a href="/mycar/tune/info.do">정비 관리</a></li>
+                        <li><a href="/mycar/account/info.do">차계부</a></li>
+                        
+                        
+                            <li><a href="/mycar/sc/info.do">나만의 SC</a></li>
+                    </ul>
+                </li>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">My Page</a>
+                    <ul class="depth2">
+                        <li><a href="/mypage/info.do">마이페이지</a></li>
+                        <li><a href="/mypage/reserv.do">구매 현황</a></li>
+                        <li><a href="/mypage/cart.do">장바구니</a></li>
+                        <li><a href="/mypage/svrprod.do">서비스상품 예약현황</a></li>
+                    </ul>
+                </li>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">My Shopping</a>
+                    <ul class="depth2">
+                        <li><a href="/service/product/category.do?product_class=14001">서비스 상품</a></li>
+                        <li><a href="/service/product/category.do?product_class=14002">GR collection</a></li>
+                    </ul>
+                </li>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Mileage</a>
+                    <ul class="depth2">
+                        <li><a href="./guide_to_earning.html"><span>M</span>마일리지 적립 안내</a></li>
+                        <li><a href="./rating_guide.html"><span>M</span>마일리지 등급 안내</a></li>
+                        <li><a href="./benefit_guide.html"><span>M</span>마일리지 혜택 안내</a></li>
+                        <li><a href="./Instructions_for_use.html"><span>M</span>마일리지 사용 안내</a></li>
+                        <li><a href="./extinction_guide.html"><span>M</span>마일리지 소멸 안내</a></li>
+                        <li><a href="./retrospective_guidance.html"><span>M</span>마일리지 소급 안내</a></li>
+                        <li><a href=""><span>M</span>마일리지 현황</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="grclub-card">
+                <a href="/community/grclub/list.do">
+                    <p style="font-weight: bold; font-size: 30px;"></p>
+                </a>
+            </div>
+            <!-- 
+            <div class="utils appArea">
+                <ul>
+                    <li>
+                        <a href="/findparkinglot">주차장 찾기</a>
+                    </li>
+                    <li>
+                        <a href="/findgasstation">주유소 찾기</a>
+                    </li>
+                </ul>
+            </div>
+             -->
+        </div>
+        <div class="bottom">
+            <div class="btn_wrap">
+                <!-- <a href="tel:080-525-8255" class="btn_guide">고객센터</a> -->
+                <a href="/mycar/sc/info.do" class="btn_guide">나만의SC</a>
+                <a href="/support/sos/info.do" class="btn_sos">SOS 긴급출동</a>
+            </div>
+        </div>
 
         <section>
             <div class="benefits_by_tier">
@@ -56,103 +185,46 @@
                 </ul>
             </div>
 
+            <div class="criteria_box"><p>선정기준</p></div>
+
             <div class="dl_container">
                 <dl class="platinum_benefit benefit_item">
-                    <dt>50만 마일리지 이상</dt>
+                    <dt>50만 마일리지 이상 적립</dt>
                     <dd><p>서비스 입고 시<br/>적립률 혜택</p><p>표준적립금<br/>X<br/><span>130%</span></p></dd>
                 </dl>
                 <dl class="gold_benefit benefit benefit_item">
-                    <dt>30만 마일리지 이상</dt>
+                    <dt>30만 마일리지 이상 적립</dt>
                     <dd><p>서비스 입고 시<br/>적립률 혜택</p><p>표준적립금<br/>X<br/><span>120%</span></p></dd>
                 </dl>
                 <dl class="silver_benefit benefit benefit_item">
-                    <dt>10만 마일리지 이상</dt>
+                    <dt>10만 마일리지 이상 적립</dt>
                     <dd><p>서비스 입고 시<br/>적립률 혜택</p><p>표준적립금<br/>X<br/><span>110%</span></p></dd>
                 </dl>
                 <dl class="bronze_benefit benefit benefit_item">
-                    <dt>5만 마일리지 이상</dt>
+                    <dt>5만 마일리지 이상 적립</dt>
                     <dd><p>서비스 입고 시<br/>적립률 혜택</p><p>표준적립금<br/>X<br/><span>105%</span></p></dd>
                 </dl>
                 <dl class="family_benefit benefit benefit_item">
                     <dt>기본등급</dt>
-                    <dd><p>서비스 입고 시<br/>적립률 혜택</p><p>표준적립금</p></dd>
+                    <dd><p>서비스 입고 시<br/>적립률 혜택</p><p class="color_point">표준적립금</p></dd>
                 </dl>
             </div>
 
             <div class="selection_criteria">
-                <h3>선정기준</h3>
-                <p>• 매년 1월 1일에 잔여 마일리지 기준이 산정 됩니다.<br/> &nbsp; &nbsp; (적립 마일리지 - 만기 마일리지)<br/>• 사용으로 인한 마일리지 차감은 등급 정산에 반영되지 않습니다.<br/>• 신차의 구매 유형이 렌터카인 경우 마일리지 적립 대상에서 제외됩니다.</p>
+                <h3>등급유지</h3>
+                <p>• 매년 1 월 1 일에 잔여 마일리지 기준이 산정됩니다.<br/> &nbsp; &nbsp; (적립 마일리지 - 만기 마일리지)<br/>• 마일리지의 유효기간은 48개월이며, 유효기간 경과로 소멸된 마일리지는<br/> &nbsp; &nbsp; 등급 산정에서 제외됩니다.<br/>• 온라인 쇼핑몰 구매로 인한 차감은 등급산정에 반영되지 않습니다.</p>
             </div>
 
             <figure class="background_img"></figure>
         </section>
 
         <footer>
-            <a href="###">확인</a>
+            <a href="###" class="confirm">확인</a>
         </footer>
     </div>
 
     <!-- script -->
 
-    <script>
-        let curPos = 0;
-        let postion = 0;
-        let start_x, end_x;
-        const slideWidth = 613;
-        const slider = document.querySelector(".slider") 
-        const sliderItem = document.querySelectorAll('.slider_item')
-        const benefitItem = document.querySelectorAll('.benefit_item')
-            
-        slider.addEventListener('touchstart', touch_start);
-        slider.addEventListener('touchend', touch_end);
-            
-        function prev(){
-            if(curPos > 0){
-              postion += slideWidth;
-              slider.style.transform = `translateX(${postion}px)`;
-              curPos = curPos - 1;
-              for(let i = 0; i < sliderItem.length; i++){
-                if(sliderItem[curPos] === sliderItem[i]){
-                    sliderItem[i].classList.remove('reduction')
-                    benefitItem[i].classList.remove('benefit')
-                }else{
-
-                    sliderItem[i].classList.add('reduction')
-                    benefitItem[i].classList.add('benefit')
-                }
-              }
-            }
-        }
-        function next(){
-          if(curPos < sliderItem.length-1){
-            postion -= slideWidth;
-            slider.style.transform = `translateX(${postion}px)`;
-            
-            curPos = curPos + 1;
-            for(let i = 0; i < sliderItem.length; i++){
-              if(sliderItem[curPos] === sliderItem[i]){
-                  sliderItem[i].classList.remove('reduction')
-                  benefitItem[i].classList.remove('benefit')
-              }else{
-                  sliderItem[i].classList.add('reduction')
-                  benefitItem[i].classList.add('benefit')
-              }
-            }
-          }
-        }
-        
-        function touch_start(event) {
-          start_x = event.touches[0].pageX
-        }
-        
-        function touch_end(event) {
-          end_x = event.changedTouches[0].pageX;
-          if(start_x > end_x){
-            next();
-          }else{
-            prev();
-          }
-        }
-    </script>
+    <script src="js/common.js"></script>
 </body>
 </html>

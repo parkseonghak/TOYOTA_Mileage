@@ -1,4 +1,4 @@
-#app{
+#container{
     width:750px;
     background-color: #101010;
     min-height: 100%;
@@ -12,7 +12,7 @@
     top: -140px;
     opacity: 0;
 }
-header{
+.nav_conatiner{
     height: 143px;
     width: 750px;
     border-bottom: 3px solid #474747;
@@ -23,12 +23,12 @@ header{
 #header.bg {
     background: rgba(0, 0, 0, .3);
 }
-header .back_btn{
+.nav_conatiner .back_btn{
     position: absolute;
     top: 68px;
     left: 30px;
 }
-header h1 {
+.nav_conatiner h1 {
     font-family: 'NanumSquareRound';
     font-weight: normal;
     font-style: normal;
@@ -40,12 +40,12 @@ header h1 {
     top: 66px;
     left: 229px;
 }
-header .hom_btn {
+.nav_conatiner .hom_btn {
     position: absolute;
     right: 100px;
     top: 54px;
 }
-header .menu_btn{
+.nav_conatiner .menu_btn{
     position: absolute;
     top: 66px;
     right: 30px;
@@ -105,7 +105,7 @@ section .mileage_pass_container{
     width: 540px;
     height: 319px;
     margin: 0 auto;
-    margin-top:125px;
+    margin-top:268px;
     border-radius: 10px;
     background-color: #303030;
     display: flex;
@@ -139,7 +139,7 @@ section .mileage_pass_container .mileage_pass p{
 footer{
     width: 750px;
     height: 98px;
-    background-color: #ED4C3A;
+    background-color: #d7022c;
 }
 footer a{
     display: flex;
@@ -147,8 +147,9 @@ footer a{
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-size: 28px;
+    font-weight: 700;
     color:#fff;
 }
 
@@ -165,21 +166,21 @@ footer a{
 
 
 /* gnb */
-#app.background-bk #gnb{padding: 66px 60px 210px; background: #010101; height: calc((var(--vh, 1vh) * 100) - 130px)}
-#app.background-bk #gnb li a{text-transform: uppercase; display: flex; align-items: center;}
-#app.background-bk #gnb .ft-red{color: #ff462d;}
-#app.background-bk #gnb .member .logout .btn_wrap { margin:  0; font-size: 34px; color: #acacb2;}
-#app.background-bk #gnb .member .logout .btn_wrap .login-btn {margin-right: 100px; position: relative;}
-#app.background-bk #gnb .member .logout .btn_wrap .login-btn:after{content:""; width:1px; height: 40px; background: #acacb2; display: block; position: absolute; top:6px; right: -70px;}
-#app.background-bk #gnb .member .login .txt{color: #fff;}
-#app.background-bk #gnb .member .login .txt .name {color: #fff;}
-#app.background-bk #gnb .login .ft{font-family: 'Open Sans',sans-serif; color: #acacb2; font-size: 30px; height: 38px; line-height: 38px; font-weight: 600;}
-#app.background-bk #gnb .login .ft span.mileage{font-family: NanumSquare; font-size: 27px; color: #ff462d; font-weight: 800; margin-left: 27px; line-height: 42px;}
-#app.background-bk #gnb .login .ft small{font-size: 20px;}
-#app.background-bk #gnb + .bottom .btn_wrap a{font-family: NanumSquare;}
-#app.background-bk #gnb + .bottom .btn_wrap .btn_guide {margin:0; background: #58505d url(../images/smarthybrid.png) 64px 44px no-repeat; text-indent: 152px;}
-#app.background-bk #gnb .member .btn_setting {top: -6px; right: 53px; width: 60px; height: 60px; background: url(../images/settings.png) center center no-repeat;}
-#app.background-bk #gnb .member .btn_alert {top: -6px; right: 143px; width: 60px; height: 60px; background: url(../images/bell.png) center center no-repeat;}
+#container.background-bk #gnb{padding: 66px 60px 210px; background: #010101; height: calc((var(--vh, 1vh) * 100) - 130px)}
+#container.background-bk #gnb li a{text-transform: uppercase; display: flex; align-items: center;}
+#container.background-bk #gnb .ft-red{color: #ff462d;}
+#container.background-bk #gnb .member .logout .btn_wrap { margin:  0; font-size: 34px; color: #acacb2;}
+#container.background-bk #gnb .member .logout .btn_wrap .login-btn {margin-right: 100px; position: relative;}
+#container.background-bk #gnb .member .logout .btn_wrap .login-btn:after{content:""; width:1px; height: 40px; background: #acacb2; display: block; position: absolute; top:6px; right: -70px;}
+#container.background-bk #gnb .member .login .txt{color: #fff;}
+#container.background-bk #gnb .member .login .txt .name {color: #fff;}
+#container.background-bk #gnb .login .ft{font-family: 'Open Sans',sans-serif; color: #acacb2; font-size: 30px; height: 38px; line-height: 38px; font-weight: 600;}
+#container.background-bk #gnb .login .ft span.mileage{font-family: NanumSquare; font-size: 27px; color: #ff462d; font-weight: 800; margin-left: 27px; line-height: 42px;}
+#container.background-bk #gnb .login .ft small{font-size: 20px;}
+#container.background-bk #gnb + .bottom .btn_wrap a{font-family: NanumSquare;}
+#container.background-bk #gnb + .bottom .btn_wrap .btn_guide {margin:0; background: #58505d url(../images/smarthybrid.png) 64px 44px no-repeat; text-indent: 152px;}
+#container.background-bk #gnb .member .btn_setting {top: -6px; right: 53px; width: 60px; height: 60px; background: url(../images/settings.png) center center no-repeat;}
+#container.background-bk #gnb .member .btn_alert {top: -6px; right: 143px; width: 60px; height: 60px; background: url(../images/bell.png) center center no-repeat;}
 #gnb .member .btn_alert.on:after {top: 10px; right: 10px;}
 
 #gnb {overflow-y: auto; position: fixed; top: 0; bottom: 0; left: 100%; z-index: 200; height: 100vh; box-sizing: border-box; width: 750px; min-height: 100%; padding: 130px 60px 210px; background: url(../../images/common/bg_gnb.png) 0 0 no-repeat; background-size: cover; transition: all .3s; opacity: 0; -webkit-overflow-scrolling: touch;}

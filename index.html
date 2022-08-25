@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마일리지 소급안내</title>
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/retrospective_guidance.css">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 </head>
-
 <body class="">
-    <div id="app" class="background-bk">
-        <header id="header" class="sub">
+    <div id="container" class="background-bk">
+        <header id="header" class="sub nav_conatiner">
             <a href="javascript:history.back();" class="back_btn"><img src="./images/left-arrow.png" alt="뒤로가기버튼"></a>
             <h1>마일리지 소급안내</h1>
             <a href="https://www.toyotakoreaapp.co.kr/main.do" class="hom_btn"><img src="./images/logo.png" alt="토요타로고"></a>
@@ -37,8 +35,8 @@
                         </div>
                         </div>
             <ul>
-                <li>
-                    <a href="javascript:void(0);">TOYOTA</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">TOYOTA</a>
                     <ul class="depth2">
                         <li><a href="/toyota/place/list.do">전시장 안내</a></li>
                         <!-- <li><a href="/toyota/campaign/list.do">캠페인</a></li> -->
@@ -52,8 +50,8 @@
                         <li><a href="/toyota/life/list.do">라이프 스타일</a></li>
                     </ul>
                 </li> -->
-                <li>
-                    <a href="javascript:void(0);">Models</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Models</a>
                     <ul class="depth2">
                         <li><a href="/models/model/list.do">차량 정보</a></li>
                         <li><a href="/models/manual/list.do">사용자 매뉴얼</a></li>
@@ -62,23 +60,23 @@
                         
                     </ul>
                 </li>
-                <li>
-                    <a href="javascript:void(0);">Service</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Service</a>
                     <ul class="depth2">
                         <li><a href="/service/center/list.do">서비스센터 예약</a></li>
                         <li><a href="/service/bodyAndPaint/view.do">판금·도장 서비스</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="javascript:void(0);">Support</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Support</a>
                     <ul class="depth2">
                         <li><a href="/support/sos/info.do">SOS 긴급 출동</a></li>
                         <li><a href="/support/contact/info.do">1:1 문의</a></li>
                         <li><a href="/support/improve/info.do">개선요청</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="javascript:void(0);">Event / Coupon</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Event / Coupon</a>
                     <ul class="depth2">
                         <li><a href="/evncou/event/list.do">이벤트</a></li>
                         <li><a href="/evncou/coupon/list.do">쿠폰 정보</a></li>
@@ -86,8 +84,8 @@
                         <!-- <li><a href="/evncou/superracing/ticketStorege.do">슈퍼레이스 티켓 보관함</a></li> -->
                     </ul>
                 </li>
-                <li>
-                    <a href="javascript:void(0);">My Car</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">My Car</a>
                     <ul class="depth2">
                         <li><a href="/mycar/info/info.do">내 차 정보</a></li>
                         <li><a href="/mycar/tune/info.do">정비 관리</a></li>
@@ -97,8 +95,8 @@
                             <li><a href="/mycar/sc/info.do">나만의 SC</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="javascript:void(0);">My Page</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">My Page</a>
                     <ul class="depth2">
                         <li><a href="/mypage/info.do">마이페이지</a></li>
                         <li><a href="/mypage/reserv.do">구매 현황</a></li>
@@ -106,23 +104,23 @@
                         <li><a href="/mypage/svrprod.do">서비스상품 예약현황</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="javascript:void(0);">My Shopping</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">My Shopping</a>
                     <ul class="depth2">
                         <li><a href="/service/product/category.do?product_class=14001">서비스 상품</a></li>
                         <li><a href="/service/product/category.do?product_class=14002">GR collection</a></li>
                     </ul>
                 </li>
-                <li class="">
-                    <a href="javascript:void(0);">Mileage</a>
+                <li class="close_menu">
+                    <a href="javascript:void(0);" class="big_menu_btn">Mileage</a>
                     <ul class="depth2">
-                        <li><a href="###"><span>M</span>마일리지 적립 안내</a></li>
-                        <li><a href="###"><span>M</span>마일리지 등급 안내</a></li>
-                        <li><a href="###"><span>M</span>마일리지 혜택 안내</a></li>
-                        <li><a href="###"><span>M</span>마일리지 사용 안내</a></li>
-                        <li><a href="###"><span>M</span>마일리지 소멸 안내</a></li>
-                        <li><a href="###"><span>M</span>마일리지 소급 안내</a></li>
-                        <li><a href="###"><span>M</span>마일리지 현황</a></li>
+                        <li><a href="./guide_to_earning.html"><span>M</span>마일리지 적립 안내</a></li>
+                        <li><a href="./rating_guide.html"><span>M</span>마일리지 등급 안내</a></li>
+                        <li><a href="./benefit_guide.html"><span>M</span>마일리지 혜택 안내</a></li>
+                        <li><a href="./Instructions_for_use.html"><span>M</span>마일리지 사용 안내</a></li>
+                        <li><a href="./extinction_guide.html"><span>M</span>마일리지 소멸 안내</a></li>
+                        <li><a href="./retrospective_guidance.html"><span>M</span>마일리지 소급 안내</a></li>
+                        <li><a href=""><span>M</span>마일리지 현황</a></li>
                     </ul>
                 </li>
             </ul>
@@ -186,7 +184,7 @@
                     </div>
                     <div class="service_channel">
                         <p>TOYOTA <span>고객센터</span></p>
-                        <span>직원상담 후 필요시 이메일이나<br />SMS를 통해 마일리지 적립요청</span>
+                        <span>직원 상담 후 필요시 이메일이나<br />SMS를 통해 마일리지 적립요청</span>
                     </div>
                 </div>
 
@@ -212,7 +210,7 @@
         </section>
 
         <footer>
-            <a href="###">확인</a>
+            <a href="###" class="confirm">확인</a>
         </footer>
     </div>
     <script src="js/common.js"></script>
