@@ -8,6 +8,11 @@
     overflow: hidden;
 }
 
+header,
+#trgAside{
+    z-index: 9999;
+}
+
 .hideHeader #header {
     top: -140px;
     opacity: 0;
