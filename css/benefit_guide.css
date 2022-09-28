@@ -1,28 +1,23 @@
 section .bg_car{
     width: 750px; height: 576px;
-    position: absolute;
-    top: 143px;
-    background: url(../images/bg_car.png)no-repeat;
-    z-index: -9999;
-}
-section .bg_gradient{
-    width: 750px; height: 576px;
-    position: absolute;
-    top: 143px;
-    z-index: -9998;
-    background:linear-gradient(3deg, rgba(16, 16, 16, 1) 20%, rgba(16, 16, 16, 0.7) 80%);
 }
 
 section .introduce{
-    margin-top:668px;
+    margin-top:243px;
     color:#fff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-size:30px;
     letter-spacing: -0.75px;
     text-align: center;
     line-height: 1.33;
 }
-section .introduce p:nth-of-type(2){
+section .introduce p:first-child{
+    font-size: 32px;
+    letter-spacing: -0.8px;
+    color:#ccc9ff;
+    margin-bottom: 103px;
+}
+section .introduce p:nth-of-type(3){
     font-size: 45px;
     font-weight: 700;
     letter-spacing: -1.13px;
@@ -31,10 +26,6 @@ section .introduce p:nth-of-type(2){
 section .introduce p:last-child{
     margin-top:76px;
     font-size:25px;
-}
-section .introduce p:last-child span{
-    font-family: 'OpenSans';
-    font-weight: 700;
 }
 
 /*  */
@@ -69,6 +60,8 @@ section .rating_container .table_box p{
 }
 section .rating_container .table_box p:nth-of-type(1){
     margin-left:37px;
+    font-family: 'OpenSans';
+    font-weight: 700;
 }
 section .rating_container .table_box p:nth-of-type(2){
     margin-left: 85px;
@@ -88,7 +81,7 @@ section .rating_container .rating_box li{
     align-items: center;
     position: relative;
     height: 90px;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     border-bottom: 2px solid #353336;
 }
 
@@ -160,8 +153,6 @@ section .rating_container .rating_box .family .standard_reserve{
 
 section .rating_container .rating_box li .rating{
     font-size:25px;
-    font-family: 'OpenSans';
-    font-weight: 700;
 }
 section .rating_container .rating_box li .mileage_base,
 section .rating_container .rating_box .family .mileage_basic,
@@ -183,16 +174,25 @@ section .rating_container .rating_box li .standard_reserve span{
 
 /*  */
 
+
+
+/*  */
+
 section .grant_criteria{
     margin:50px 30px 100px 30px;
     color:#ccc9ff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-size:20px;
     line-height: 1.25;
     letter-spacing: -0.5px;
 }
 section .grant_criteria p:nth-of-type(2){
     margin: 34px 0;
+}
+
+.toyota_word{
+    font-family: 'OpenSans';
+    font-weight: 700;
 }
 
 section .background_img{
@@ -204,3 +204,4 @@ section .background_img{
     top: 1100px;
     z-index: -9999;
 }
+

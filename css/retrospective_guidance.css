@@ -3,7 +3,7 @@ section .introduce{
 }
 section .mileage_introduce h2{
     color:#ccc9ff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-weight: 700;
     font-style: normal;
     font-size:32px;
@@ -14,7 +14,7 @@ section .mileage_introduce h2{
 }
 section .mileage_introduce p{
     color:#fff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-weight: normal;
     font-style: normal;
     font-size:30px;
@@ -42,7 +42,7 @@ section .toyota_app p{
     line-height: 1.33;
 }
 section .toyota_app p span{
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-weight: normal;
 }
 
@@ -60,11 +60,11 @@ section .service_center .toyota_container{
     margin-top:39px;
 }
 section .service_center .toyota_container span{
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-weight: normal;
 }
 section .service_center .tel_container{
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-size: 24px;
     font-weight: 700;
     line-height: 1.67;
@@ -106,7 +106,7 @@ section .channel .channel_container .application_channel{
     top:36px;
     left:115px;
     color:#fff;
-    font-family:'NanumSquareRound';
+    font-family:'NanumSquare';
     font-size: 25px;
 }
 section .channel .channel_container .how_to_apply{
@@ -114,7 +114,7 @@ section .channel .channel_container .how_to_apply{
     top:36px;
     right:103px;
     color:#fff;
-    font-family:'NanumSquareRound';
+    font-family:'NanumSquare';
     font-size:25px;
 }
 
@@ -141,7 +141,7 @@ section .channel .service_channel p{
 }
 section .channel .app_channel p span,
 section .channel .service_channel p span{
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-weight: normal;
 }
 section .channel .app_channel > span,
@@ -150,7 +150,7 @@ section .channel .service_channel > span{
     color: #c2c3cd;
     font-size: 22px;
     right: 82px;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
 }
 
 section .channel .service_channel p{
@@ -164,6 +164,9 @@ section .channel .service_channel > span{
 section .document_guide{
     border-bottom: 2px solid #353336;
 }
+section .document_guide .circle{
+    background-color: #c2c3cd;
+}
 section .document_guide .guide{
     margin-top:75px;
     text-align: center;
@@ -172,15 +175,15 @@ section .document_guide .guide{
     align-items: center;
     color: #fff;
     font-size:25px;
-    font-family:'NanumSquareRound';
+    font-family:'NanumSquare';
 }
 section .document_guide ul{
-    margin:38px 0 0 93px;
+    margin:38px 0 0 92px;
     color:#c2c3cd;
     font-size: 22px;
     line-height: 1.14;
     letter-spacing: -0.55px;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
 }
 section .document_guide ul li:not(:last-child){
     margin-bottom: 9px;
@@ -194,13 +197,13 @@ section .document_guide ul li:last-child{
 section .further_explanation{
     color:#ccc9ff;
     font-size: 20px;
-    font-family:'NanumSquareRound';
+    font-family:'NanumSquare';
     line-height: 1.5;
     letter-spacing: -0.5px;
     margin-bottom: 134px;
 }
 section .further_explanation ul{
-    margin: 36px 0 0 48px;
+    margin: 36px 0 0 38px;
 }
 
 /*  */

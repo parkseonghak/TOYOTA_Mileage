@@ -3,14 +3,12 @@
     text-align: center;
 }
 .benefits_by_tier h2{
-    font-family: 'OpenSans';
     font-size: 54px;
-    font-weight: 700;
     line-height: 1.57;
     color:#fff;
 }
 .benefits_by_tier p{
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-size: 30px;
     line-height: 1.33;
     letter-spacing: -0.75px;
@@ -42,8 +40,6 @@
     margin-right:73px;
 }
 .slider li p{
-    font-family: 'OpenSans';
-    font-weight: 700;
     position: absolute;
 }
 .slider li .mileage_pass{
@@ -105,7 +101,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin: 25px 0;
 }
 .criteria_box p{
     width: 175px; height: 39px;
@@ -127,7 +123,6 @@
     width: 540px;
     height: 270px;
     margin: 0 auto;
-    margin-top:35px;
 }
 .dl_container dl{
     position: absolute;
@@ -138,7 +133,7 @@
     margin:0 auto;
     text-align: center;
     color: #fff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     display: block;
 }
 .platinum_benefit dt{
@@ -158,15 +153,16 @@
     border-bottom: 2px solid #353336;
 }
 .platinum_benefit dd p:nth-of-type(1){
-    padding-right: 73px;
+    padding-right: 67px;
     line-height: 1.76;
 }
 .platinum_benefit dd p:nth-of-type(2){
-    padding: 30px 0 37px 73px;
+    padding: 30px 0 37px 77px;
     line-height: 1.6;
     border-left:2px solid #353336;
 }
 .platinum_benefit dd p span{
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -175,7 +171,7 @@
     margin:0 auto;
     text-align: center;
     color: #fff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     display: block;
 }
 .gold_benefit dt{
@@ -195,15 +191,16 @@
     border-bottom: 2px solid #353336;
 }
 .gold_benefit dd p:nth-of-type(1){
-    padding-right: 73px;
+    padding-right: 67px;
     line-height: 1.76;
 }
 .gold_benefit dd p:nth-of-type(2){
-    padding: 30px 0 37px 73px;
+    padding: 30px 0 37px 77px;
     line-height: 1.6;
     border-left:2px solid #353336;
 }
 .gold_benefit dd p span{
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -212,7 +209,7 @@
     margin:0 auto;
     text-align: center;
     color: #fff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     display: block;
 }
 .silver_benefit dt{
@@ -232,15 +229,16 @@
     border-bottom: 2px solid #353336;
 }
 .silver_benefit dd p:nth-of-type(1){
-    padding-right: 73px;
+    padding-right: 67px;
     line-height: 1.76;
 }
 .silver_benefit dd p:nth-of-type(2){
-    padding: 30px 0 37px 73px;
+    padding: 30px 0 37px 77px;
     line-height: 1.6;
     border-left:2px solid #353336;
 }
 .silver_benefit dd p span{
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -249,7 +247,7 @@
     margin:0 auto;
     text-align: center;
     color: #fff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     display: block;
 }
 .bronze_benefit dt{
@@ -269,15 +267,16 @@
     border-bottom: 2px solid #353336;
 }
 .bronze_benefit dd p:nth-of-type(1){
-    padding-right: 73px;
+    padding-right: 67px;
     line-height: 1.76;
 }
 .bronze_benefit dd p:nth-of-type(2){
-    padding: 30px 0 37px 73px;
+    padding: 30px 0 37px 77px;
     line-height: 1.6;
     border-left:2px solid #353336;
 }
 .bronze_benefit dd p span{
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -286,7 +285,7 @@
     margin:0 auto;
     text-align: center;
     color: #fff;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     display: block;
 }
 .family_benefit dt{
@@ -304,17 +303,19 @@
     font-size: 25px;
     color:#c2c3cd;
     border-bottom: 2px solid #353336;
+    height: 205px;
 }
 .family_benefit dd p:nth-of-type(1){
-    padding:50px 73px 49px 0;
+    padding:50px 67px 49px 0;
     line-height: 1.76;
     border-right:2px solid #353336;
 }
 .family_benefit dd p:nth-of-type(2){
-    padding-left:73px;
+    padding-left:54px;
     line-height: 1.6;
 }
 .family_benefit dd p span{
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -327,6 +328,9 @@ dd .color_point{
     color:#ccc9ff;
     font-weight: 700;
 }
+dd .color_point{
+    font-size: 35px;
+}
 
 
 /*  */
@@ -338,7 +342,7 @@ dd .color_point{
     color:#ccc9ff;
 }
 .selection_criteria h3{
-    font-family:'NanumSquareRound';
+    font-family:'NanumSquare';
     font-size:25px;
 }
 .selection_criteria p{

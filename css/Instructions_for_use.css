@@ -9,7 +9,7 @@
     width: 750px; height: 496px;
     position: absolute;
     top: 145px;
-    background: linear-gradient(to top, rgba(16, 16, 16, 1), 30%, rgba(16, 16, 16, 0));
+    background: linear-gradient(to top, rgba(16, 16, 16, 1), 55%, rgba(16, 16, 16, 0));
     z-index: -9998;
 }
 
@@ -18,7 +18,7 @@ section .introduce{
     color:#fff;
     display: flex;
     justify-content: center;
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     font-size:30px;
     letter-spacing: -0.75px;
     text-align: center;
